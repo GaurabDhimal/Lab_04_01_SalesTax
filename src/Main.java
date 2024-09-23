@@ -5,9 +5,11 @@ public class Main
      double purchasePrice = 350.50;
      double salesTax = 0;
      final double SALES_TAX_RATE = .05;
+     double totalPrice = 0;
 
      salesTax = purchasePrice * SALES_TAX_RATE;
+     totalPrice = purchasePrice + salesTax;
 
-        System.out.println("The sales tax on a purchase of " + purchasePrice + " is " + salesTax);
+        System.out.println("The sales tax on a purchase of $" + purchasePrice + " is $" + salesTax + " and your total price is $" + totalPrice);
     }
 }
